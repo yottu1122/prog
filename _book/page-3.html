@@ -1,0 +1,501 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScriptを書いてみよう · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.15">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                <link rel="stylesheet" href="styles/webstyle.css">
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="page-2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Webのフロントエンドに触れてみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="page-1.html">
+            
+                <a href="page-1.html">
+            
+                    
+                    HTMLを書いてみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="page-2.html">
+            
+                <a href="page-2.html">
+            
+                    
+                    CSSを書いてみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="page-3.html">
+            
+                <a href="page-3.html">
+            
+                    
+                    JavaScriptを書いてみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >JavaScriptを書いてみよう</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="javascriptを書いてみよう">JavaScriptを書いてみよう</h1>
+<h2 id="javascriptの記述">JavaScriptの記述</h2>
+<p>JavaScriptとは、ウェブアプリ開発などで使用されるプログラミング言<br>語です。  </p>
+<p>ちなみに語呂が似ている「Java」とは全く別の言語になっているので<br>注意してください。JavaScriptを略す場合は「JS」になります。  </p>
+<p>JavaScriptで作ることができる代表的なものに下記のようなものがあり<br>ます。 </p>
+<p>・Webページの動作<br>・Webアプリ開発<br>・スマホアプリ開発<br>・ゲーム開発  </p>
+<h2 id="サンプル">サンプル</h2>
+<p>では実際に書いてみましょう。  </p>
+<p>まずはエディタ上で新規ファイルを作成し、すぐに保存します。保存<br>場所はindex.htmlやstyle.cssファイルと同じ場所にしてください。ファ<br>イル名は「main.js」とします。  </p>
+<p>次にmain.jsファイルをindex.htmlファイルに読み込むためにindex.html<br>ファイルに16行目のコードを追加します。   </p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ja&quot;</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>HTMLサンプル<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello HTML<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>　<span class="hljs-attr">id</span>=<span class="hljs-string">&quot;content&quot;</span>&gt;</span>初めてのHTML<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>テキスト１<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>テキスト２<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;main.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>これでmain.jsファイルを読み込むことができました。  </p>
+<p>では、main.jsファイルにJavaScriptコードを記述します。 </p>
+<pre><code class="lang-javascript">alert(<span class="hljs-string">&quot;Hello JS!&quot;</span>);
+</code></pre>
+<p>ここまで書き終わったらindex.htmlとmain.jsファイルを保存してブラウ<br>ザを更新してください。  </p>
+<p>このようなアラートが出てくれば成功です。  </p>
+<p><img src="img/web3.png"></p>
+<p>次にJavaScriptからブラウザの文字を変更します。</p>
+<pre><code class="lang-javascript">alert(<span class="hljs-string">&quot;Hello JS!&quot;</span>);
+
+<span class="hljs-keyword">var</span> subTitle = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;content&apos;</span>);
+subTitle.textContent = <span class="hljs-string">&apos;初めてのJS&apos;</span>;
+</code></pre>
+<p>書き終わったら保存してブラウザを更新してください。「初めての<br>HTML」という文字が「初めてのJS」と変わっていたら成功です。 </p>
+<p>z<img src="img/web4.png"></p>
+<h2 id="consolelog-について">console.log について</h2>
+<p>次にconsole.logについて説明をして行きます。<br>console.logは、値をデバッガーのコンソールに表示する関数です。<br>GoogleChromeで右クリックを使用しコンテキストメニューを表示して<br>ください     </p>
+<p><img src="img/web5.png"></p>
+<p>その中にある検証をクリックしてみましょう。</p>
+<p><img src="img/web6.png"></p>
+<p>右側にこのようなものが表示されます。これをデベロッパーツールと<br>言います。<br>これを使いエラーが出ているかを判断して行きます。<br>では実際にエラーを確認してみましょう。<br>Consoleタブを開いてみましょう。  </p>
+<p><img src="img/web7.png"></p>
+<p>この状態はエラーが出ていない状態です。<br>では実際にエラーを表示してみましょう。<br>わざとエラーを出すために先ほど書いたalert(&quot;Hello JS!&quot;);の前にこんに<br>ちはと書いてみましょう。<br>実際に書くとこうなります。  </p>
+<pre><code class="lang-js">こんにちはalert(<span class="hljs-string">&quot;Hello JS!&quot;</span>);
+</code></pre>
+<p>では確認してみましょう。  </p>
+<p><img src="img/web8.png"></p>
+<p>このように表示されたらエラーが出ています。<br>この場合はmain.jsの1行目にエラーがありますと表示されています。<br>このエラーを直すと表示されなくなります。<br>先ほど書いた&quot;こんにちは&quot;は取り除きましょう。  </p>
+<p>ではここでconsole.logを使用してみましょう。<br>6行目に追加してください。  </p>
+<pre><code class="lang-js">alert(<span class="hljs-string">&quot;Hello JS!&quot;</span>);
+
+<span class="hljs-keyword">var</span> subTitle = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;content&apos;</span>);
+subTitle.textContent = <span class="hljs-string">&apos;初めてのJS&apos;</span>;
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Hello Js&apos;</span>);
+</code></pre>
+<p>ではcosoleを確認してみましょう。</p>
+<p>console.logを使用することで便利なことがたくさんありますが、ここ
+では使用方法だけの紹介にしておきたいと思います。
+ここからはconsole.logを使いながらプログラミングでよく使われる処
+理をJavaScriptで学んでいきます。</p>
+<h2 id="変数宣言">変数宣言</h2>
+<p>次に変数についての説明をしていきます。<br>変数とは、名前をつけた箱に数値などのデータを格納することで、必<br>要に応じて簡単に利用できるようにしたものです。<br>今回はよく使われている変数宣言をする方法として&apos;let&apos;,&apos;const&apos;,を説明し<br>ます。  </p>
+<p>まずはletについて説明していきます。<br>letは再代入が可能な変数宣言の方法です。<br>またletでは同じ変数名を定義するとエラーがおきます。こちらをみて<br>みましょう。  </p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> x;
+<span class="hljs-keyword">let</span> x;
+</code></pre>
+<p>この場合は同じ変数名を宣言しているのでエラーが出ます。  </p>
+<p>次ににconstの説明です。<br>constは再宣言と再代入が不可能な変数宣言になります。  </p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> x = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">const</span> x = <span class="hljs-number">2</span>;
+</code></pre>
+<p>この場合は再宣言かつ再代入をしようとしているのでエラーが出ま<br>す。  </p>
+<p>では代入を確認して行きます。<br>以下のコードを書いてください。</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> x = <span class="hljs-number">1</span>;
+<span class="hljs-built_in">console</span>.log(x);
+</code></pre>
+<p>では確認して行きましょう。  </p>
+<p><img src="img/web9.png"></p>
+<p>代入がされているとconsoleに１と表示されます。</p>
+<h2 id="条件分岐">条件分岐</h2>
+<p>次に条件分岐についてです。  </p>
+<p>条件分岐とは、条件文によって、処理が分岐するかどうかを決定する<br>命令のことです。<br>条件分岐を行う場合は&apos;if&apos;を使います。<br>では使用してみましょう。  </p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> x = <span class="hljs-number">1</span>;
+<span class="hljs-built_in">console</span>.log(x);
+
+<span class="hljs-keyword">if</span> (x == <span class="hljs-number">1</span>){
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;こんにちは&apos;</span>);
+}
+</code></pre>
+<p>const x = 1と代入をします。<br>ifではx == 1とすることでxが１の場合にconsole.logに“こんにちはと出<br>力してください“という指示をしています。<br>それ以外の数の場合は条件に合わないので何も表示されません。<br>ではconsoleを確認して行きましょう。     </p>
+<p><img src="img/web10.png"></p>
+<p>このように、”こんにちは”と表示されていれば成功です。<br>ではconstの中身を２にして、条件から外してみましょう。 </p>
+<p><img src="img/web11.png"></p>
+<p>表示されなくなったら成功です。  </p>
+<p>if文にはelse ifという拡張構文が存在しています。<br>まずは使い方を見てみましょう。  </p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> x = <span class="hljs-number">2</span>;
+<span class="hljs-built_in">console</span>.log(x);
+
+<span class="hljs-keyword">if</span> (x == <span class="hljs-number">1</span>){
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;こんにちは&apos;</span>);
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (x == <span class="hljs-number">2</span>){
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;おはようございます&apos;</span>); 
+}
+</code></pre>
+<p>この文では「xが１の時は“こんにちは“、xが２の時は“おはようござい<br>ます“とコンソールに表示してください」という指示を出しています。<br>では結果をみてみましょう。  </p>
+<p><img src="img/web12.png"></p>
+<p>2の場合は“おはようございます“になりました。
+ではconstのxを1に戻してみましょう。</p>
+<p><img src="img/web13.png"></p>
+<p>1の場合は“こんにちは“になることが確認できました。  </p>
+<p>次にelseについて説明して行きます。<br>elseもif文の拡張構文になります。<br>まず使い方をみていきましょう。  </p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> x = <span class="hljs-number">10</span>;
+<span class="hljs-built_in">console</span>.log(x);
+
+<span class="hljs-keyword">if</span> (x == <span class="hljs-number">1</span>){
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;こんにちは&apos;</span>);
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (x == <span class="hljs-number">2</span>){
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;おはようございます&apos;</span>); 
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;こんばんは&apos;</span>);
+}
+</code></pre>
+<p>if,else if,以外の条件の場合はconsole.logでこんばんはと出力してください。
+ではみてみましょう。</p>
+<p><img src="img/web14.png"></p>
+<p>elseの場合はそれ以外の条件になるので条件式を書く必要はありませ<br>ん。<br>なのでこの場合は1でも2でもない場合は全て“こんばんは“になります。<br>状況に応じて使用して行きましょう。  </p>
+<p>チャレンジ！<br>if,else if,elseを使用してコンソールに60を出力してみましょう。  </p>
+<p>条件1:変数宣言はxとyを使用してください。<br>条件2:条件分岐を使ってelseの結果がコンソールに表示されるようにしてください。<br>条件3:elseで出力するのはconsole.log(x+y);にしてください。  </p>
+<h2 id="forループ">forループ</h2>
+<p>プログラムを書いていく中で繰り返し出力してほしい状況がありま<br>す。<br>まずはこれをみてみましょう。  </p>
+<pre><code class="lang-js">&lt;p id=<span class="hljs-string">&quot;content&quot;</span>&gt;初めてのHTML&lt;/p&gt;
+</code></pre>
+<p>そして、style.cssファイルでカラーを変更します。idを指定する場合は<br>id名の前に「#」を記述します。     </p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">console</span><span class="hljs-selector-class">.log</span>(1);
+<span class="hljs-selector-tag">console</span><span class="hljs-selector-class">.log</span>(2);
+<span class="hljs-selector-tag">console</span><span class="hljs-selector-class">.log</span>(3);
+<span class="hljs-selector-tag">console</span><span class="hljs-selector-class">.log</span>(4);
+<span class="hljs-selector-tag">console</span><span class="hljs-selector-class">.log</span>(5);
+<span class="hljs-selector-tag">console</span><span class="hljs-selector-class">.log</span>(6);
+<span class="hljs-selector-tag">console</span><span class="hljs-selector-class">.log</span>(7);
+<span class="hljs-selector-tag">console</span><span class="hljs-selector-class">.log</span>(8);
+<span class="hljs-selector-tag">console</span><span class="hljs-selector-class">.log</span>(9);
+<span class="hljs-selector-tag">console</span><span class="hljs-selector-class">.log</span>(10);
+       .
+       .
+       .
+<span class="hljs-selector-tag">console</span><span class="hljs-selector-class">.log</span>(20);
+</code></pre>
+<p>このように1から20まで出力をしたいときに20個のconsole.logを表記<br>するのはとても面倒で、見づらい文になってしまいます。<br>このような場合はforループを使用します。<br>まずはこちらをみてみましょう。  </p>
+<pre><code class="lang-js"><span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> num = <span class="hljs-number">1</span> ; num &lt;= <span class="hljs-number">20</span> ; num++ ){
+    <span class="hljs-built_in">console</span>.log(num);
+  }
+</code></pre>
+<p>ここでは「1に1ずつ足していき、それを20以上になるまで繰り返して<br>ください。」と指示しています。<br>まずは変数宣言が必要です。<br>今回はletを使用して行きます。<br>これまで使用していたconstでは値を変えることができないのでエラー<br>が出てしまいます。<br>letは値を再代入できるので値が変わった時も出力することができま<br>す。  </p>
+<p>次に宣言した変数を再代入する最大の値を書きます。<br>この場合は20まで出力して欲しいので&lt;=を使用して20まで出力して欲<br>しいということを指示しています。<br>これを&lt;にすると19まで出力してくださいという指示になります。<br>用途に応じて使い分けて行きましょう。<br>最後にnum++についてです。<br>ここでは1ずつ増やしてくださいという指示をしています。<br>では結果をみてみましょう。  </p>
+<p><img src="img/web15.png"></p>
+<p>このように表示されいれば実行されています。<br>for文では--を使用することで１ずつ減らすこともできるのでこちらも用<br>途に合わせて使い分けてください。 </p>
+<p>チャレンジ！
+for文を使用してコンソールに20から１ずつ減らして、1までを<br>出力しましょう。  </p>
+<h2 id="関数">関数</h2>
+<p>関数は JavaScript の基本的な構成要素のひとつです。また関数は、<br>JavaScript の手続き ― つまり、タスクや値計算を実行する文の集まり<br>です。<br>まずはこちらをみてみましょう。  </p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">num</span>(<span class="hljs-params"></span>)</span>{
+ <span class="hljs-keyword">const</span> x = <span class="hljs-number">20</span>;
+ <span class="hljs-keyword">const</span> y = <span class="hljs-number">20</span>;
+
+ <span class="hljs-built_in">console</span>.log(x+y);
+}
+</code></pre>
+<p>これはnumという箱に格納したという状態になります。<br>変数を宣言をし各変数に20という値をそれぞれに格納した状態です。<br>そしてconsole.logで二つを足した数字をコンソールに出力するという<br>指示になります。<br>ではコンソールを確認しましょう。 </p>
+<p><img src="img/web16.png"></p>
+<p>これだけではコンソールには反映されません。
+もう一度コードを見てみましょう。</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">num</span>(<span class="hljs-params"></span>)</span>{
+ <span class="hljs-keyword">const</span> x = <span class="hljs-number">20</span>;
+ <span class="hljs-keyword">const</span> y = <span class="hljs-number">20</span>;
+
+ <span class="hljs-built_in">console</span>.log(x+y);
+}
+num();
+</code></pre>
+<p>これは指定した関数名を呼び出している形になります。<br>ではコンソールを確認してみましょう。  </p>
+<p><img src="img/web16.png"></p>
+<p>コンソール上に足された数字が出ています。<br>こうなっていれば実行されていることになります。  </p>
+<p>関数は様々な形で作成して、使用することができます。<br>用途に合わせて自由に使っていきましょう。  </p>
+<p>これでweb初級は終了となります。<br>次の教科書へ進んでください。  </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="page-2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: CSSを書いてみよう">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"JavaScriptを書いてみよう","level":"1.4","depth":1,"previous":{"title":"CSSを書いてみよう","level":"1.3","depth":1,"path":"page-2.md","ref":"page-2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"page-3.md","mtime":"2020-12-14T04:22:50.495Z","type":"markdown"},"gitbook":{"version":"3.6.15","time":"2020-12-14T04:25:54.824Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

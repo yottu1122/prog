@@ -1,0 +1,347 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Webのフロントエンドに触れてみよう · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.15">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                <link rel="stylesheet" href="styles/webstyle.css">
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="page-1.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Webのフロントエンドに触れてみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="page-1.html">
+            
+                <a href="page-1.html">
+            
+                    
+                    HTMLを書いてみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="page-2.html">
+            
+                <a href="page-2.html">
+            
+                    
+                    CSSを書いてみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="page-3.html">
+            
+                <a href="page-3.html">
+            
+                    
+                    JavaScriptを書いてみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Webのフロントエンドに触れてみよう</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="webのフロントエンドに触れてみよう">Webのフロントエンドに触れてみよう</h1>
+<p>皆さんはWebページを必ず見た事があると思います。<br>Webのフロントエンドとは、ユーザーが普段ブラウザを使って閲覧しているWebサイトの目に見える部分のことを指します。  </p>
+<p>HTML、CSS、JavaScriptを使いウェブサイトの<br>・内容（テキストや画像など）<br>・見た目（文字の大きさや背景の色など）<br>・動き（ボタンを押したら画像が切り替わったりスクロールしたり）<br>などを作っていきます。  </p>
+<p><img class="itnav" src="img/itnav.png"></p>
+<p>上記のようにフロントエンドを作成するときに主に３つの言語を使用します。
+HTML
+CSS
+JavaScript</p>
+<h2 id="html5">HTML5</h2>
+<p><img src="img/HTML5.png"></p>
+<p>HTML5（HyperText Markup Language）はマークアップ言語という<br>ウェブコンテンツに構造と意味を与えるための言語です。<br>例えば文章に段落をつけたり、見出しや表を定義できます。<br>また画像や動画も入れることができます。<br>書き方は、タグというもので要素を囲んで記述します。  </p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>見本<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>見本<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>見本<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">imge.pmg</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;画像&quot;</span>&gt;</span>
+</code></pre>
+<h2 id="css3">CSS3</h2>
+<p><img src="img/css3.png"></p>
+<p>CSS3（Cascading Style Sheets）は、HTMLコンテンツに適用するスタイルシートの言語です。<br>例えばページの背景色を設定できます。そのほかにも画像のサイズ、縦並びや横並びなどの指定、<br>そして最近ではアニメーションなども簡単に実装できます。  </p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> {
+    <span class="hljs-attribute">color</span>:<span class="hljs-number">#ffffff</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
+}    
+
+<span class="hljs-selector-tag">p</span> {
+    <span class="hljs-attribute">sont-size</span>: <span class="hljs-number">15px</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+}
+</code></pre>
+<h2 id="javascript">JavaScript</h2>
+<p><img src="img/javascript.png"></p>
+<p>JavaScriptはウェブページにて複雑なことをできるようにするプログラミング言語です。<br>さまざまなもの（Webサイトやスマートテレビ、最新の車など）に使われているのですが、<br>WebのフロントエンドにおけるJavaScriptの役割は、<br>動的にコンテンツを更新したり主に動きの部分の役割が大きいです。    </p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> hoge = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;p&apos;</span>);
+
+hoge.addEventListener(<span class="hljs-string">&apos;click&apos;</span>, updateName);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateName</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> name = prompt(<span class="hljs-string">&apos;名前を入力してください&apos;</span>);
+    hoge.textContent = name;
+}
+</code></pre>
+<p>今回はこの3つの使い方について説明していきます。</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="page-1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: HTMLを書いてみよう">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Webのフロントエンドに触れてみよう","level":"1.1","depth":1,"next":{"title":"HTMLを書いてみよう","level":"1.2","depth":1,"path":"page-1.md","ref":"page-1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"README.md","mtime":"2020-12-09T07:30:30.773Z","type":"markdown"},"gitbook":{"version":"3.6.15","time":"2020-12-14T04:25:54.824Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

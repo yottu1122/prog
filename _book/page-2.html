@@ -1,0 +1,451 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>CSSを書いてみよう · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.15">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                <link rel="stylesheet" href="styles/webstyle.css">
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="page-3.html" />
+    
+    
+    <link rel="prev" href="page-1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Webのフロントエンドに触れてみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="page-1.html">
+            
+                <a href="page-1.html">
+            
+                    
+                    HTMLを書いてみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="page-2.html">
+            
+                <a href="page-2.html">
+            
+                    
+                    CSSを書いてみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="page-3.html">
+            
+                <a href="page-3.html">
+            
+                    
+                    JavaScriptを書いてみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >CSSを書いてみよう</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="cssを書いてみよう">CSSを書いてみよう</h1>
+<h2 id="cssとは">CSSとは</h2>
+<p>ウェブページのスタイルを指定するための言語です。 ワープロソフト<br>などで作成される文書も含めて、文書のスタイルを指定する技術全般<br>をスタイルシートといいます。 HTMLやXHTMLなどで作成されるウェ<br>ページにスタイルを適用する場合には、スタイルシート言語の1つで<br>あるCSSが一般的に利用されています。</p>
+<p>CSSは、HTMLと組み合わせて使用する言語です。 HTMLがウェブペー<br>ジ内の各要素の意味や情報構造を定義するのに対して、CSSではそれら<br>をどのように装飾するかを指定します。 例えば、ウェブページが画面<br>に表示される際の色・サイズ・レイアウトなどの表示スタイルや、 プ<br>リンタなどの機器で印刷・出力される際の出力スタイル、 音声で読み<br>上げられる際の再生スタイルなど、 ウェブページをどのようなスタイ<br>ルで表示・出力・再生するかについて指定することができます。     </p>
+<h2 id="cssの書き方">CSSの書き方</h2>
+<p>CSSには文字の大きさを変えたり、カラーを変更したり、幅を均等にし<br>たりといったスタイルを記述します。  </p>
+<p>CSSの記述はどこの（セレクタ）なにを（プロパティ）どうするのか<br>（値）をこのように記述します。  </p>
+<pre><code class="lang-css">セレクタ { プロパティ: 値; }
+</code></pre>
+<h2 id="サンプル">サンプル</h2>
+<p>では実際に書いてみましょう。</p>
+<p>まずエディタ上で新規ファイルを作成し、すぐに保存します。保存場<br>所は先ほど作成したindex.htmlファイルと同じ場所にします。ファイル<br>名は「style.css」としましょう。    </p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">80px</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#ff4646</span>;
+}
+<span class="hljs-selector-tag">p</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">40px</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+}
+</code></pre>
+<p>こちらの記述終わったら保存しましょう。現状では、こちらの<br>style.cssはindex.htmlに反映されていません。  </p>
+<p>index.htmlにstyle.cssを適用するには、index.htmlにstyle.cssを読み込<br>む必要があります。  </p>
+<p>実際にやってみましょう。まずindex.htmlファイルをエディタで開きま<br>す。そしてhead内に７行目のコードを追加しましょう。  </p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ja&quot;</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>HTMLサンプル<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello HTML<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>初めてのHTML<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>linkタグで外部のファイルを読み込むことができます。hrefでstyle.css
+を選択します。</p>
+<p>ここまで記述できたらこちらを保存してブラウザで開きましょう。す
+でに開いてある場合は、ブラウザ上で更新（command(Ctrl) + r）をす
+ると反映されます。</p>
+<p>ブラウザが下記のようになっていれば成功です。 </p>
+<p><img src="img/web1.png"></p>
+<h2 id="idとclassについて">idとclassについて</h2>
+<p>index.htmlファイルに13〜14行目を追記します。</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ja&quot;</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>HTMLサンプル<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello HTML<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>初めてのHTML<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキスト１<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキスト２<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>こちらを保存してブラウザを更新すると「テキスト１」と「テキスト<br>２」が表示されます。では、「初めてのHTML」のみ文字の色を緑にし<br>たい場合はどのようにすれば良いでしょうか。  </p>
+<p>現在のCSSでは、pタグを一括で囲っているので下記の９行目のように<br>pタグにcolorを設定するとすべてのpタグの文字が緑になってしまいま<br>す。   </p>
+<h2 id="head要素">head要素</h2>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">80px</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#ff4646</span>;
+}
+<span class="hljs-selector-tag">p</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">40px</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#00ff2a</span>;
+}
+</code></pre>
+<p>このような場合にidやclassを使います。まず、index.htmlファイルの初<br>めてのHTMLのpタグ内にidを設定します。   </p>
+<h2 id="body要素">body要素</h2>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;content&quot;</span>&gt;</span>初めてのHTML<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<p>そして、style.cssファイルでカラーを変更します。idを指定する場合は<br>id名の前に「#」を記述します。     </p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">80px</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#ff4646</span>;
+}
+<span class="hljs-selector-tag">p</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">40px</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+}
+<span class="hljs-selector-id">#content</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#00ff2a</span>;
+}
+</code></pre>
+<p>これで「初めてのHTML」の文字のみ緑色になりました。このようにど<br>れか１つの要素のスタイルのみ変更したい場合は「id」を使用します。<br>次にclassですが、こちらは複数の要素のスタイルを変更したいときに<br>使用します。では、テキスト１とテキスト２の文字のサイズを変更し<br>ましょう。実際に13〜14行目に「class=&quot;text&quot;」を追記していきます。   </p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ja&quot;</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>HTMLサンプル<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello HTML<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>　<span class="hljs-attr">id</span>=<span class="hljs-string">&quot;content&quot;</span>&gt;</span>初めてのHTML<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>テキスト１<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>テキスト２<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>そしてCSSでフォントサイズを変更します。classを指定する場合は<br>class名の前に「.」を記述します。  </p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">80px</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#ff4646</span>;
+}
+<span class="hljs-selector-tag">p</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">40px</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+}
+<span class="hljs-selector-id">#content</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#00ff2a</span>;
+}
+<span class="hljs-selector-class">.text</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
+}
+</code></pre>
+<p>index.htmlとstyle.cssファイルを保存し、ブラウザを更新します。  </p>
+<p>これでテキスト１とテキスト２の文字のサイズが変更されたかと思い<br>ます。  </p>
+<p><img src="img/web2.png"></p>
+<p>idとclassの使い分けについては少し複雑なのですが、初め<br>はidが1つの要素のみ変更するとき、classが複数の要素を変<br>更するときと覚えておけば大丈夫です。気になる人は調べて<br>みましょう。  </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="page-1.html" class="navigation navigation-prev " aria-label="Previous page: HTMLを書いてみよう">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="page-3.html" class="navigation navigation-next " aria-label="Next page: JavaScriptを書いてみよう">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CSSを書いてみよう","level":"1.3","depth":1,"next":{"title":"JavaScriptを書いてみよう","level":"1.4","depth":1,"path":"page-3.md","ref":"page-3.md","articles":[]},"previous":{"title":"HTMLを書いてみよう","level":"1.2","depth":1,"path":"page-1.md","ref":"page-1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"page-2.md","mtime":"2020-12-10T05:50:49.738Z","type":"markdown"},"gitbook":{"version":"3.6.15","time":"2020-12-14T04:25:54.824Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
