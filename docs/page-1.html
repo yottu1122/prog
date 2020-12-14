@@ -3,7 +3,7 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <title>プログラミングをやってみよう！ · HonKit</title>
+        <title>HTMLを書いてみよう · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.6.15">
@@ -26,11 +26,11 @@
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
                 
-            
+                <link rel="stylesheet" href="styles/webstyle.css">
         
 
     
-                <link rel="stylesheet" href="styles/webdesign.css">
+
     
         
     
@@ -55,6 +55,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
+    
+    <link rel="next" href="page-2.html" />
     
     
     <link rel="prev" href="./" />
@@ -91,7 +93,7 @@
                 <a href="./">
             
                     
-                    プログラミング基礎
+                    Webのフロントエンドに触れてみよう
             
                 </a>
             
@@ -104,7 +106,33 @@
                 <a href="page-1.html">
             
                     
-                    プログラミングをやってみよう！
+                    HTMLを書いてみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="page-2.html">
+            
+                <a href="page-2.html">
+            
+                    
+                    CSSを書いてみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="page-3.html">
+            
+                <a href="page-3.html">
+            
+                    
+                    JavaScriptを書いてみよう
             
                 </a>
             
@@ -142,7 +170,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >プログラミングをやってみよう！</a>
+        <a href="." >HTMLを書いてみよう</a>
     </h1>
 </div>
 
@@ -157,20 +185,68 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="プログラミングに触ってみよう">プログラミングに触ってみよう</h1>
-<h2 id="実際にプログラミングをしてみよう">実際にプログラミングをしてみよう</h2>
-<p>では実際にプログラミングをしていきます。<br>まずはVScodeから新規ファイルを作成します。 </p>
-<p><img src="img/vscode5.png"></p>
-<p>新規ファイルを作成したら保存します。プログラミングでは保存をよく行うので、ショートカット<br>キーを覚えておくと便利です。Windows（Ctrl＋S）、Mac（command＋S）  </p>
-<p><img src="img/vscode6.png"></p>
-<p>この様に保存画面が表示されれば成功です。<br>ではデスクトップに&quot;index.html&quot;と名前をつけて保存してください。<br><img src="img/vscode7.png"></p>
-<p>この様にメモ帳のような画面になれば成功です。<br>では実際にコードを書いていきましょう。<br>以下のコードを書いて保存してください。  </p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                <h1 id="htmlを書いてみよう">HTMLを書いてみよう</h1>
+<h2 id="初めてのhtml">初めてのHTML</h2>
+<p>HTMLという単語を聞いたことがある人は多いと思います。<br>”プログラミングをする時に使用するもの”と捉えている方も少なくないと思います。<br>ここではHTMLがどのようなものなのかを学習していきます。    </p>
+<h2 id="htmlとは">HTMLとは</h2>
+<p>HTMLとは、Hyper Text Markup Language（ハイパーテキスト・マークアップ・ランゲージ）の略で、<br>Webページを作るための最も基本的なマークアップ言語のひとつです。<br>マークアップ言語とは、組版指定に使われる言語で、視覚表現や文章構造などを記述するための形式言語です。<br>テキストファイルであることが多いですが、バイナリデータによる形式もあります。<br>では早速書いていきましょう。   </p>
+<h2 id="htmlとは">HTMLとは</h2>
+<p>まず、最初にエディタ上で新規ファイル（command(Ctrl) + n）を作成しましょう。
+そしてすぐに保存（command(Ctrl) + s）します。
+ファイル名は「index.html」とします。</p>
+<p>そしてHTMLにはほとんど必ず記述するテンプレート文があります。  </p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ja&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>    
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>    
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>HTML5<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<p>ではちゃんと適用されているか確認します。<br>デスクトップに保存してあるindex.htmlを開いてみてください。  </p>
-<p><img src="img/vscode8.png"></p>
-<p>この様になれば成功です。<br>1行書くだけで文字を表示する事ができます。  </p>
-<p>これでプログラミング基礎編は終了となります。  </p>
+<h2 id="doctype宣言">DOCTYPE宣言</h2>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+</code></pre>
+<p>DOCTYPEは単にブラウザにどのようなドキュメントであるかを知らせる方法です。<br>HTML文書の場合、具体的なHTMLのバージョンや特徴のことです。<br>DOCTYPEは必ずいつもHTML文書の冒頭に書きます。  </p>
+<h2 id="html要素">HTML要素</h2>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ja&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>どのHTML文書でも、次はhtml要素が必要です。<br>上の例では、lang属性が日本語になるようにjaで指定しています。<br>他の全ての要素はこの要素の子孫（内側）として配置しなければなりません。   </p>
+<h2 id="head要素">head要素</h2>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>    
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>    
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>HTML5<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+</code></pre>
+<p>どのHTML文書でも、次はhtml要素が必要です。<br>上の例では、lang属性が日本語になるようにjaで指定しています。<br>他の全ての要素はこの要素の子孫（内側）として配置しなければなりません。  </p>
+<p>JavaScriptはウェブページにて複雑なことをできるようにするプログラミング言語です。<br>さまざまなもの（Webサイトやスマートテレビ、最新の車など）に使われているのですが、<br>WebのフロントエンドにおけるJavaScriptの役割は、<br>動的にコンテンツを更新したり主に動きの部分の役割が大きいです。    </p>
+<h2 id="body要素">body要素</h2>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+​<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<p>body要素は、文書のすべてのコンテンツを指定するための場所です。<br>この「body」タグ内に書かれたものがブラウザに表示されます。    </p>
+<h2 id="サンプル">サンプル</h2>
+<p>これらを踏まえて少しHTMLを書いてみましょう。</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ja&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>    
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>    
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>HTMLサンプル<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>    
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello HTML<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>    
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>初めてのHTML<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>記述が終わったら保存（command(Ctrl) + s）してindex.htmlファイル<br>をブラウザで開いてみましょう。    </p>
+<p>HTMLにはさまざまなタグ（文字を描画するタグ、画像を描画するタ<br>グ、リストを表示するタグ）があるので色々試してみましょう。  </p>
+<p>タグ一覧
+<a href="http://www.htmq.com/html/" target="_blank">http://www.htmq.com/html/</a></p>
 
                                 
                                 </section>
@@ -198,10 +274,14 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: プログラミング基礎">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Webのフロントエンドに触れてみよう">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="page-2.html" class="navigation navigation-next " aria-label="Next page: CSSを書いてみよう">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -210,7 +290,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"プログラミングをやってみよう！","level":"1.2","depth":1,"previous":{"title":"プログラミング基礎","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"page-1.md","mtime":"2020-12-08T06:42:10.912Z","type":"markdown"},"gitbook":{"version":"3.6.15","time":"2020-12-09T02:11:04.565Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"HTMLを書いてみよう","level":"1.2","depth":1,"next":{"title":"CSSを書いてみよう","level":"1.3","depth":1,"path":"page-2.md","ref":"page-2.md","articles":[]},"previous":{"title":"Webのフロントエンドに触れてみよう","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"page-1.md","mtime":"2020-12-09T09:42:09.289Z","type":"markdown"},"gitbook":{"version":"3.6.15","time":"2020-12-14T04:25:54.824Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
