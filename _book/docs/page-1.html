@@ -26,7 +26,7 @@
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
                 
-                <link rel="stylesheet" href="styles/webstyle.css">
+            
         
 
     
@@ -220,8 +220,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>HTML5<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 </code></pre>
-<p>どのHTML文書でも、次はhtml要素が必要です。<br>上の例では、lang属性が日本語になるようにjaで指定しています。<br>他の全ての要素はこの要素の子孫（内側）として配置しなければなりません。  </p>
-<p>JavaScriptはウェブページにて複雑なことをできるようにするプログラミング言語です。<br>さまざまなもの（Webサイトやスマートテレビ、最新の車など）に使われているのですが、<br>WebのフロントエンドにおけるJavaScriptの役割は、<br>動的にコンテンツを更新したり主に動きの部分の役割が大きいです。    </p>
+<p>head要素はブラウザに対する指定と、文書に関するメタ情報（meta）など、付加的な情報を指定するた<br>めの場所です。「charset」は文字コードを指定します。基本的には文字コードは「utf-8」を指定しまし<br>ょう。これがないとブラウザによっては文字化けを起こすことがあります。<br>「title」タグ内に書かれた文字は、全てのブラウザのタイトルバー（ウィンドウ上部にある箇所）に表示<br>されます。 </p>
 <h2 id="body要素">body要素</h2>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
 ​<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
@@ -290,7 +289,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"HTMLを書いてみよう","level":"1.2","depth":1,"next":{"title":"CSSを書いてみよう","level":"1.3","depth":1,"path":"page-2.md","ref":"page-2.md","articles":[]},"previous":{"title":"Webのフロントエンドに触れてみよう","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"page-1.md","mtime":"2020-12-09T09:42:09.289Z","type":"markdown"},"gitbook":{"version":"3.6.15","time":"2020-12-14T04:25:54.824Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"HTMLを書いてみよう","level":"1.2","depth":1,"next":{"title":"CSSを書いてみよう","level":"1.3","depth":1,"path":"page-2.md","ref":"page-2.md","articles":[]},"previous":{"title":"Webのフロントエンドに触れてみよう","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"page-1.md","mtime":"2021-01-21T08:44:59.524Z","type":"markdown"},"gitbook":{"version":"3.6.15","time":"2021-01-21T08:50:27.356Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
